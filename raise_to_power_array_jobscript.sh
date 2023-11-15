@@ -10,8 +10,8 @@
 #SBATCH --job-name=raise_to_power
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=epiasini@sissa.it
-#SBATCH --output=/leonardo/home/userexternal/epiasini/sissa/lab_activities/lab_teachings/version_control/out/%x.%A.%3a.out
-#SBATCH --error=/leonardo/home/userexternal/epiasini/sissa/lab_activities/lab_teachings/version_control/out/%x.%A.%3a.err
+#SBATCH --output=/leonardo/home/userexternal/epiasini/sissa/lab_activities/lab_teachings/version_control/out/%3a.out
+#SBATCH --error=/leonardo/home/userexternal/epiasini/sissa/lab_activities/lab_teachings/version_control/out/%3a.err
 #SBATCH --array=0-20
 
 
