@@ -17,7 +17,8 @@
 
 source $HOME/virtualenvs/dl/bin/activate
 
-cd $HOME/penn/projects/complexity/experiments/pavlovia_full/src/analysis/scripts/
+#cd $HOME/sissa/lab_activities/lab_teachings/version_control/
+cd $SLURM_SUBMIT_DIR
 
 srun --unbuffered time python raise_to_power_array.py ${SLURM_ARRAY_TASK_ID}
 
