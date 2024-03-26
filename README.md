@@ -15,3 +15,6 @@ Apart from the file location, the `%3a.out` template means that the job number 0
 After this is done and the jobs are over, using `parse_and_plot.py` we load all results of the embarassingly parallel computation and we put them together to make a plot. This is performed inside `parse_and_plot.py`.
 
 This task, although trivial, hopefully highlights a very common and powerful pattern, where we take a big problem, break it down in a long list of smaller independent problems, solve them all independently in parallel, arrange for each sub-solution to be written in a specific place on disk, and finally run a script that reads back in all solutions to the sub-problems and assembles the solution to the original problem. This is very common, for instance when doing parameter sweeps when fitting or simulating models, or when - say - fitting statistical models to many subjects or replicates of the data that can be treated independently.
+
+## Logging and input parsing in Python
+As a bonus, these scripts also integrate examples/possible good practices for how to include logging and how to parse command line arguments in Python. These are both very useful things to do, which take very little to learn and pay off indefinitely. Moreover they make the type of things we're doing in this tutorial easier, so it made sense to include them here.
